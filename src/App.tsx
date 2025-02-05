@@ -13,6 +13,6 @@ function App() {
       <GlobalStyles />
     </Provider>
   );
-}
+};
 
 export default App;
