@@ -59,7 +59,7 @@ border-radius: 5px;
 height: 35px;
 width: 100%;
 padding: 0 1rem;
-background-color:rgb(227, 241, 100);
+background-color: rgb(227, 241, 100);
 color: black;
 
 display: flex;
@@ -71,3 +71,25 @@ svg {
     font-size: 1rem;
 }
 `
+
+export const RemoveFromCardButton = styled.button`
+font-weight: 600;
+font-size: 0.75rem;
+
+border: none;
+border-radius: 5px;
+height: 35px;
+width: 100%;
+padding: 0 1rem;
+background-color: rgb(222, 136, 115);
+color: black;
+
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+
+svg {
+    font-size: 1rem;
+}
+`;
