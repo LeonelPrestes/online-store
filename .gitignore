@@ -33,3 +33,5 @@ Thumbs.db
 
 # Ignorar arquivos do TypeScript
 *.tsbuildinfo
+
+.vercel

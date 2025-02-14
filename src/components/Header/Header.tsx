@@ -11,6 +11,9 @@ export const Header: React.FC = () => {
   const { user } = useSelector(
     (rootReducer: RootReducer) => rootReducer.userReducer
   );
+  const { cart } = useSelector(
+    (rootReducer: RootReducer) => rootReducer.cartReducer
+  );
   const dispatch = useDispatch();
 
   const [showCart, setShowCart] = React.useState(false);
@@ -34,10 +37,10 @@ export const Header: React.FC = () => {
       //     email: "leonelprestes90@gmail.com"
       //    },
       // });
-    } else {
-      dispatch(logout({}));
       //   type: "user/logout",
       // });
+    } else {
+      dispatch(logout({}));
     }
   }
 
@@ -57,7 +60,7 @@ export const Header: React.FC = () => {
             </S.CartButton>
           </S.ButtonsWrapper>
         </S.Wrapper>
-        <Cart showCart={showCart} />
+        <Cart showCart={showCart} cart={[]}/>
       </S.StyledHeader>
     );
   };
