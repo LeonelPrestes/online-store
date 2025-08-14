@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 interface CartContainerProps {
-    showCart: boolean;
+    $showCart: boolean;
 }
 
 export const CartContainer = styled.aside<CartContainerProps>`
 position: fixed;
 top: 0;
-right: ${({ showCart }) => showCart ? '0' : '-350px'};
+right: ${({ $showCart }) => ($showCart ? '0' : '-350px')};
 
 width: 350px;
 background-color: white;

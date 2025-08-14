@@ -50,7 +50,7 @@ export const Header: React.FC = () => {
           <S.HeaderTitle>My Shop.</S.HeaderTitle>
 
           <S.ButtonsWrapper>
-            <S.AuthButton isLogged={isLogged} onClick={handleUserAuth}>
+            <S.AuthButton $isLogged={isLogged} onClick={handleUserAuth}>
               {isLogged ? "Sair" : "Entrar"}
               {isLogged ? <FiLogOut /> : <FiLogIn />}
             </S.AuthButton>

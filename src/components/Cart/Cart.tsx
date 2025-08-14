@@ -17,10 +17,10 @@ export const Cart: React.FC<CartProps> = ({ showCart }) => {
 
   const total = cart.reduce((totalCart, products) => {
     return totalCart + products.price;
-  }, 0);console.log(cart)
+  }, 0);
 
   return (
-    <S.CartContainer showCart={showCart}>
+    <S.CartContainer $showCart={showCart}>
       <S.Title>Carrinho</S.Title>
 
       <S.CartProductList>
